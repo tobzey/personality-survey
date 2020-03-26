@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 1px;
+  width: 99%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+form .statement {
+  display:block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px 0 0 4.25%;
+  margin-bottom:10px;
+}
+form .likert {
+  list-style:none;
+  width:100%;
+  margin:0;
+  padding:0 0 35px;
+  display:block;
+  border-bottom:2px solid #efefef;
+}
+form .likert:last-of-type {border-bottom:0;}
+form .likert:before {
+  content: '';
+  position:relative;
+  top:11px;
+  left:9.5%;
+  display:block;
+  background-color:#efefef;
+  height:4px;
+  width:78%;
+}
+form .likert li {
+  display:inline-block;
+  width:19%;
+  text-align:center;
+  vertical-align: top;
+}
+form .likert li input[type=radio] {
+  display:block;
+  position:relative;
+  top:0;
+  margin-left:-6px;
+  
+}
+form .likert li label {width:100%;}
+form .buttons {
+  margin:30px 0;
+  padding:0 4.25%;
+  text-align:right
+} 
+form .buttons button {
+  padding: 5px 10px;
+  background-color: #67ab49;
+  border: 0;
+  border-radius: 3px;
+}
+@media only screen and (min-width: 600px) {
+    .tab { 
+        padding: 40px;  
+    }
+}
